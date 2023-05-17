@@ -116,6 +116,10 @@ void CmfcgitcmdDlg::OnBnClickedButton1()
 
 void CmfcgitcmdDlg::OnBnClickedButton2()
 {
+	std::string var = "merge-ws.bat";
+	_stprintf_s(cmd, 100, _T("%S"), (cm + var).c_str());
+	testCreateProcess(cmd);
+	CDialogEx::OnOK();
 }
 
 
@@ -130,10 +134,6 @@ void CmfcgitcmdDlg::OnBnClickedButton3()
 
 void CmfcgitcmdDlg::OnBnClickedButton4()
 {
-	std::string var = "merge-ws.bat";
-	_stprintf_s(cmd, 100, _T("%S"), (cm + var).c_str());
-	testCreateProcess(cmd);
-	CDialogEx::OnOK();
 }
 
 
