@@ -8,6 +8,11 @@ cpp/*
 idea/*
 !idea/web
 
+/Adobe
+/_demo
+/java
+/nodejs
+/res
 /gitfile
 /qt
 
