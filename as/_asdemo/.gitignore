@@ -1,0 +1,21 @@
+local.properties
+*.iml
+/.gradle
+/.idea
+**/build
+**/release
+**/debug
+**/.cxx
+/key
+
+# Windows
+[Dd]esktop.ini
+Thumbs.db
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes

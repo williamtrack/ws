@@ -1,0 +1,24 @@
+# IntelliJ project files
+/.idea
+/node_modules
+/https
+/copy
+/pages
+/libs
+
+upload/*
+!upload/app
+upload/app/*
+!upload/app/version
+
+# Windows
+[Dd]esktop.ini
+Thumbs.db
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
