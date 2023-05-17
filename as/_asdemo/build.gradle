@@ -36,7 +36,7 @@ ext {
 
     CompileSdkVersion = 28
     BuildToolsVersion = '28.0.3'
-    MinSdkVersion = 16 //蓝牙
+    MinSdkVersion = 21
     TargetSdkVersion = 28
     javaSourceCompatibility = JavaVersion.VERSION_1_8
     javaTargetCompatibility = JavaVersion.VERSION_1_8

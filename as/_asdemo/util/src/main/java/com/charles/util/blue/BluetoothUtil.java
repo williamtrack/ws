@@ -1,4 +1,4 @@
-package com.charles.demo.util.blue;
+package com.charles.util.blue;
 
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
@@ -47,8 +47,12 @@ public class BluetoothUtil {
                 for (int i = 0; i < devices.size(); i++) {
                     mblueName[i] = devices.get(i).getName();
                     mBlueMac[i] = devices.get(i).getAddress();
-                    //sb.append(mblueName[i]+";");
-                    //Log.d(TAG, "onFinishedSearch: "+mblueName[i] );
+                    Log.d("William", "BluetoothUtil-onFinishedSearch: " +mblueName[i]);
+
+                    if(mblueName[i].equals("Z9")) {
+                        Log.d("William", " ==="+bouddevices.get(i).getAddress());+-
+//                        connectBlue(bouddevices.get(i).getAddress());
+                    }
                 }
 
                 if (mblueName.length != 0) {
@@ -96,6 +100,10 @@ public class BluetoothUtil {
 
     public void onResume() {
         bluetoothClient.registerReceiver();
+        if(!bluetoothClient.check()){
+            Log.d("William", "not connected");
+            scanBlue();
+        }
     }
 
     //打开蓝牙
@@ -132,7 +140,6 @@ public class BluetoothUtil {
     public void connectBlue(String targetDeviceName) {
         for (int i = 0; i < devices.size(); i++) {
             if (devices.get(i).getAddress().equals(targetDeviceName)) {
-
                 targetDevice = devices.get(i);
                 Log.d("William", "connectBlueTooth: " + targetDevice.getName());
             }

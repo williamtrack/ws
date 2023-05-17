@@ -18,13 +18,8 @@ import android.widget.Toast;
 import androidx.core.app.ActivityCompat;
 
 import com.charles.demo.activity.BaseActivity;
-import com.charles.demo.test.ObservableTest;
-import com.charles.demo.test.RandomTest;
-import com.charles.demo.util.FileIOUtil;
 import com.charles.demo.test.TouchActHelper;
-import com.charles.demo.util.blue.BluetoothUtil;
-
-import java.util.Random;
+import com.charles.util.blue.BluetoothUtil;
 
 public class MainActivity extends BaseActivity {
 

@@ -73,6 +73,6 @@ dependencies {
 
     implementation "androidx.room:room-rxjava2:2.0.0-beta01"
 
-//    implementation project(path: ':eyetracking')
+    implementation project(path: ':util')
 //    implementation "${CUVersion}"
 }

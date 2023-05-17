@@ -2,7 +2,7 @@ package com.charles.demo.test;
 
 import android.util.Log;
 
-import com.charles.demo.util.CountUtil;
+import com.charles.util.CountUtil;
 
 public class CPUTest {
     static byte[] data = new byte[1000000];
