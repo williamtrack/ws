@@ -1,4 +1,4 @@
-package com.charles.demo.util.blue;
+package com.charles.util.blue;
 
 import android.annotation.SuppressLint;
 import android.bluetooth.BluetoothAdapter;

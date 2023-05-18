@@ -2,7 +2,7 @@ package com.charles.demo.test;
 
 import android.util.Log;
 
-import com.charles.demo.util.CountUtil;
+import com.charles.util.CountUtil;
 
 import java.util.ArrayList;
 import java.util.BitSet;

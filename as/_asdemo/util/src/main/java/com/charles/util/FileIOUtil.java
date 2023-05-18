@@ -1,4 +1,4 @@
-package com.charles.demo.util;
+package com.charles.util;
 
 import android.content.Context;
 import android.os.Environment;

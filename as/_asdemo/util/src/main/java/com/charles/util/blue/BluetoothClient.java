@@ -1,4 +1,4 @@
-package com.charles.demo.util.blue;
+package com.charles.util.blue;
 
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothClass;
@@ -111,9 +111,7 @@ public class BluetoothClient {
             intentFilter.addAction(BluetoothDevice.ACTION_BOND_STATE_CHANGED);
             intentFilter.addAction(BluetoothAdapter.ACTION_DISCOVERY_FINISHED);
 
-
             mContext.registerReceiver(mBluetoothReceiver, intentFilter);
-
         }
         return mBluetoothClient;
     }
@@ -205,6 +203,15 @@ public class BluetoothClient {
         } else {
             Log.d(TAG, "蓝牙已关闭");
         }
+    }
+
+    //检查是否有设备连接
+    public boolean check(){
+        int state = mBluetoothAdapter.getProfileConnectionState(BluetoothProfile.A2DP);
+        Log.d("William", "BluetoothClient-check: " +state);
+        if (state == BluetoothAdapter.STATE_CONNECTED){
+            return true;
+        }else return false;
     }
 
     /**
