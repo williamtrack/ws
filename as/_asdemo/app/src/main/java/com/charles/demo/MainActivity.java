@@ -72,6 +72,7 @@ public class MainActivity extends BaseActivity {
         bluetoothUtil.start();
         bluetoothUtil.onResume();
     }
+
     BluetoothUtil bluetoothUtil;
     View.OnClickListener onClickListener = new View.OnClickListener() {
         @Override
