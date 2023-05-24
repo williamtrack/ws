@@ -37,6 +37,8 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Log.d("William", "MainActivity-onCreate: ");
+
         imageView = findViewById(R.id.main_iv);
         editText = findViewById(R.id.main_edit);
         findViewById(R.id.btn_main_test1).setOnClickListener(onClickListener);
