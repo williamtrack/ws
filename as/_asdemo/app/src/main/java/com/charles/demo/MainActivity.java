@@ -19,6 +19,7 @@ import androidx.core.app.ActivityCompat;
 
 import com.charles.demo.activity.BaseActivity;
 import com.charles.demo.test.TouchActHelper;
+import com.charles.util.LogUtil;
 import com.charles.util.blue.BluetoothUtil;
 
 public class MainActivity extends BaseActivity {
@@ -37,6 +38,7 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        LogUtil.d("hello");
         imageView = findViewById(R.id.main_iv);
         editText = findViewById(R.id.main_edit);
         findViewById(R.id.btn_main_test1).setOnClickListener(onClickListener);

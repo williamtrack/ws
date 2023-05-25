@@ -50,7 +50,7 @@ public class BluetoothUtil {
                     Log.d("William", "BluetoothUtil-onFinishedSearch: " +mblueName[i]);
 
                     if(mblueName[i].equals("Z9")) {
-                        Log.d("William", " ==="+bouddevices.get(i).getAddress());+-
+                        Log.d("William", " ==="+bouddevices.get(i).getAddress());
 //                        connectBlue(bouddevices.get(i).getAddress());
                     }
                 }
@@ -178,7 +178,7 @@ public class BluetoothUtil {
         bouddevices.addAll(bondedDevices);
         for (int i = 0; i < bouddevices.size(); i++) {
             Log.d(TAG, "addBound: " + bouddevices.get(i).getName());
-//            Log.d(TAG, "addBound address: " + bouddevices.get(i).getAddress());
+            Log.d(TAG, "addBound address: " + bouddevices.get(i).getAddress());
         }
     }
 }
