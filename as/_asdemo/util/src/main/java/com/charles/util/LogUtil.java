@@ -31,7 +31,7 @@ public class LogUtil {
 
 //	private static String TAG = LogUtils.class.getSimpleName();
 	private static String TAG = "William";
-	private static int LOG_LEVEL = DEBUG_LEVEL_OFF;
+	private static int LOG_LEVEL = DEBUG_LEVEL_DEBUG;
 
 	public void setTag(final String tag) {
 		if (tag != null) {

@@ -1,0 +1,3 @@
+rootProject.name='UnityTest'
+include ':unityPA'
+include ':a2unity'
